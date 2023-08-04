@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестова задача</title>
+	 <link rel="stylesheet" href="cssjs/styles.css">
+</head>
+<body>
+ <div class="container">
+    <header>
+        <h1>Тестова задача / Вноска</h1>
+    </header>
+
+    <nav>
+        <ul>
+		 <li><a href="index.html">Списък Кредити</a></li>
+			<li><a href="nov.html">Нов кредит</a></li>
+			<li><a href="#">Вноска по кредит</a></li>
+            <li><a href="info.html">Задание</a></li>
+        </ul>
+    </nav>
+	<main>
+ <section>
+ 
+ <div class="form-container">
+            <h2>Вноска</h2>
+			<form id="new" onsubmit="submitForm(event)">
+			 <div class="result-container" id="res"></div>
+<div class="form-group">
+		<label for="no">Кредит номер:</label>
+        <input type="text" id="no" name="no" required onchange="checkInfo()" placeholder="00000001"><br>
+</div>
+<div class="form-group">
+        <label for="email">Сума на вноската в лв:</label>
+        <input type="text" id="s" name="s" required><br>
+</div>
+
+
+			<div class="form-group">
+				<input type="hidden" name="action" value="pay">
+                <button type="submit">Направи вноска</button>
+            </div>
+			
+			</form>
+			</div>
+			</section>
+    
+		
+		
+		
+    </main>
+</div>
+    <footer>
+        <p>Yavor &copy; 2023</p>
+    </footer>
+	<script src="cssjs/js.js"></script>
+	
+</body>
+</html>
